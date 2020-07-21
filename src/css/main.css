@@ -1,0 +1,31 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.bm-item-list > * > span {
+    @apply text-gray-500 uppercase font-normal text-base tracking-wide ml-8 mb-6;
+}
+
+.bm-item-list > * > span:hover{
+    @apply text-white;
+}
+
+.glide__bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0, 0.5) ;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.glide__bullet--active{
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.glide__bullets {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+}
